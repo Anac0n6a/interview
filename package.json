@@ -1,0 +1,11 @@
+{
+  "name": "todo-fullstack-sandbox",
+  "private": true,
+  "workspaces": ["server", "client"],
+  "scripts": {
+    "start": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
